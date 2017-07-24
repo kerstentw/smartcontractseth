@@ -16,7 +16,7 @@ contract usingTinyOracle {
     TinyOracleLookup lookup = TinyOracleLookup(lookupContract);
     if (msg.sender != lookup.getResponseAddress())
       throw;
-    _
+    _;
   }
 
   function queryTinyOracle(bytes query) internal returns (uint256 id) {
